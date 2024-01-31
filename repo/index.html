@@ -1,0 +1,492 @@
+            <!DOCTYPE html>
+            <html lang="en" dir="ltr">
+
+            <head>
+              <title>Hotel Booking Website</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+              <link rel="stylesheet" href="css/style.css">
+
+              <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+            <link href="assets/img/favicon.ico" rel="icon" />
+                <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon" />
+
+                <!-- Google Fonts -->
+                <link
+                  href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+                  rel="stylesheet"
+                />
+
+                <!-- Vendor CSS Files -->
+                <link
+                  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                  rel="stylesheet"
+                />
+                <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+                  crossorigin="anonymous"
+                />
+                <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+                  rel="stylesheet"
+                />
+                <link
+                  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+                  rel="stylesheet"
+                />
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+                />
+                <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+                <!-- Template Main CSS File -->
+
+     </head>
+
+            <body>
+              <header class="header">
+                <div class="container">
+                  <nav class="navbar flex1">
+                    <div class="sticky_logo logo">
+                    
+                      <a href="#home">
+                        <img id="logo" src="images/logo1.png" alt=""></a>
+                      
+                    </div>
+                        
+
+                       
+                    <ul class="nav-menu">
+                      <li> <a href="#home">Home</a> </li>
+                      <li> <a href="#about">about</a> </li>
+                      <!-- <li> <a href="#room">room</a> </li> -->
+                      <li> <a href="#services">rooms</a> </li>
+                      
+                      <li> <a href="#gallary">gallary</a> </li>
+                      <li> <a href="#blog">Restaurant</a> </li>
+                      <li> <a href="#contact">contact us</a> </li>
+                    </ul>
+                     <H2>JVW ARENA RESTURANT</H2>
+
+                    <div class="hamburger">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+                  </nav>
+                  
+                </div>
+              </header>
+              <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+
+                hamburger.addEventListener("click", mobliemmenu);
+
+                function mobliemmenu() {
+                  hamburger.classList.toggle("active");
+                  navMenu.classList.toggle("active");
+                }
+
+                window.addEventListener("scroll", function() {
+                  var header = document.querySelector("header");
+                  header.classList.toggle("sticky", window.scrollY > 0)
+                })
+              </script>
+               <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image/1.JPG" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image/2.JPG" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image/sli1.JPG" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+                   <p>The JVW ARENA is a premium establishment located in the heart of town, Motihari. With a vast area of parking, our facility boasts a well-designed banquet hall that has a classic look and a welcoming ambient.
+The banquet hall is suitable for any kind of event, be it a wedding, engagement, anniversary, birthday, or any other special occasion, along with corporate meetings and conferences.
+In addition to our impressive banquet hall, we also have a multi-cuisine, spacious restaurant. The restaurant offers a diverse menu to cater to various tastes and
+preferences. We also have a well-decorated lounge area with enchanting lights and sound systems.
+As for our accommodation options, we offer a variety of rooms to suit different preferences. These include suite rooms, premium deluxe rooms, deluxe rooms, and
+Standard Rooms. Each room is designed with comfort and style in mind, ensuring an enjoyable stay for our guests. Each room has all the necessary luxurious amenities and a unique design of wooden flooring, one of its kind in Bihar.
+
+</p>
+                 </div>
+                 <script>
+                    let slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+            
+           <section class="about" id="about">
+                <div class="container"> <h3 id="cc">Welcome to JVW Arena hotel & restaurant</h3>
+                  
+                 <div class="content flex top">
+                  
+                    <div class="left">
+                     
+                      <div  id="aut"></div>
+                      <p>All areas are under CCTV cameras and fire safety,  Lift, wifi, parking,
+                         we provide wooden floor rooms, all rooms are fully AC, 
+                        and we provide all the latest amenities like minibars,
+                        and one of the best  peps company mattresses, All rooms are interior designed,
+                        wifi, bathtub in side suit rooms</p><p>
+                          Our Mission
+                            At JVW Arena, we strive to provide our guests with top-notch service, comfortable accommodations, and exquisite 
+                          amenities. We also provide fresh, authentic multi-cuisine with a focus on better ingredients and healthier, more hygienic food options.
+                        well-trained staff, hygienic foods, designed sofas, and chair, selfie point,
+                          inbuilt music, awesome view outside, fully AC building, 
+                          mchandra Banquet & confrence hall with new interior design, music system, 
+                            the capacity of up to 150 people, projector with screen, standee, stage, 
+                            odium, mice, etc, up to 400-600 guests can enjoy outside the hotel, designer lights,</p>
+                          <p>hotel jvw arena is a unit of jvw hospilitaies pvt.ltd.
+                          Its a private limited company 
+                            JVW comes from jaiswal vivid world</p>
+                          </p>
+                    
+                    </div>
+                    <div class="right">
+                      <img id="abt" src="image/about.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+                </section>
+
+            
+
+              
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+              <script>
+                $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  dots: false,
+                  navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 1
+                    },
+                    1000: {
+                      items: 1
+                    }
+                  }
+                })
+              </script>
+            <section class="offer mtop" id="services">
+                  <h3 id="hhh">Welcome to our hotel </h3>
+                  
+                  <p  id="ggg">All our guestrooms are elegantly furnished with handmade furniture include luxury 
+                    en-suite facilities with complimentary </p> <p  id="rrr">amenities pack, flat screen LCD TV,
+                     tea/coffee making facilities, fan, hairdryer and the finest pure white linen and towels.</p>
+                    
+                <div class="image-container">
+                <div class="content grid2 mtop">
+                <div class="box flex">
+                 <div class="left">
+                 <img src="image/single.png" alt="">
+                      </div>
+                      <div class="right">
+                        <h4>Deluxe single Room</h4>
+                        <div class="rate flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p> Maintain your fitness routine with complimentary access to our well-equipped fitness center.
+
+                                  Indulge in the epitome of comfort and luxury with our
+                                Deluxe Single Room.</p>
+                        <h5>From 1599</h5>
+                        
+                      </div>
+                    </div>
+                    <div class="box flex">
+                      <div class="left">
+                        <img src="image/dlx.JPG" alt="">
+                      </div>
+                      <div class="right">
+                        <h4>Deluxe Room</h4>
+                        <div class="rate flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>Our Deluxe  room has a seating area and dyning table, ample storage,mini
+                           fridge. This room can also be configured with an extra roll-away bed for
+                            families of 3.</p>
+                        <h5>From 1899</h5>
+                        
+                      </div>
+                    </div>
+                    <div class="box flex">
+                      <div class="left">
+                        <img src="image/pre.JPG" alt="">
+                      </div>
+                      <div class="right">
+                        <h4> Premium Deluxe </h4>
+                        <div class="rate flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>Our primium Deluxe room has a seating area and dyning table with sofa,
+                           ample storage,mini fridge. This room can also be configured with an extra
+                            roll-away bed for families of 3, outside view from room.</p>
+                        <h5>From 2199</h5>
+                        
+                      </div>
+                    </div>
+                    <div class="box flex">
+                      <div class="left">
+                        <img src="image/suter.JPG" alt="">
+                      </div>
+                      <div class="right">
+                        <h4>Suite Room</h4>
+                        <div class="rate flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p> Our suite room has a special seating and dyning area with sofa, 
+                          ample storage,mini fridge. This room can also be configured with an 
+                          extra roll-away bed for families of 3,bath-tube
+
+                        </p>
+                        <h5>From 4199</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </section>
+               <section class="gallary top" id="gallary">
+                <!-- <h3 id="YY">JVW ARENA HOTEL & RESTURANT</h3> -->
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img src="images/13.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/10.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/explore.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/4.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/11.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/6.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/12.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/14.jpeg" alt="">
+                    <div class="overlay">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+
+              <script>
+                $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 0,
+                  nav: false,
+                  dots: false,
+                  autoplay: true,
+                  slideTransition: 'linear',
+                  autoplayTimeout: 4000,
+                  autoplaySpeed: 4000,
+                  autoplayHoverPause: true,
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 3
+                    },
+                    1000: {
+                      items: 5
+                    }
+                  }
+                })
+            </script>
+            <section class="blog top" id="blog">
+                  <h5 id="iii">OUR RESTURANT MENU</h5>
+                    <h3 id="ttt"> JVW Arena, a brand-new multi-cuisine restaurant in Motihari.
+                       Whether you’re in the mood for something spicy or sweet, we’ve got a huge range of
+                        authentic  cuisines available on menu. We’re excited to serve you delicious food.</h3>
+            </div>
+           </section>
+                                <div class="image-gallery">
+                  <img src="images/a (1).jpg" alt="Image 1">
+                  <img src="images/a (2).jpg" alt="Image 2">
+                  <img src="images/a (3).jpg" alt="Image 3">
+                  <img src="images/a (4).jpg" alt="Image 4">
+                  <img src="images/a (5).jpg" alt="Image 5">
+                  <img src="images/a (6).jpg" alt="Image 6">
+                  <img src="images/a (7).jpg" alt="Image 7">
+                  <img src="images/a (8).jpg" alt="Image 8">
+                  <img src="images/a (9).jpg" alt="Image 9">
+                  <img src="images/a (10).jpg" alt="Image 10">
+                  <img src="images/a (11).jpg" alt="Image 11">
+                  <img src="images/a (12).jpg" alt="Image 12">
+                  <!-- Add more images as needed -->
+                    </div>
+
+
+              <section class="map top">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3565.705761618912!2d84.9270744754307!3d26.65790177679989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDM5JzI4LjUiTiA4NMKwNTUnNDYuNyJF!5e0!3m2!1sen!2sin!4v1705574138972!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </section>
+
+
+
+          <div id="ftr">
+            <div class="subscribe" id="contact">
+             
+            </div>
+           </div>              
+                        <div id="form">
+                          
+                      <form action="https://api.web3forms.com/submit" method="POST">
+                  
+                    <input type="hidden" name="access_key" value="9c56356b-3bb8-4a1b-aebc-e53a1007ca39">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    
+                    </form>
+                    
+  
+      
+
+      
+          <div id="as">
+              <h4 id="hh">Director's me..</h4>
+                    <p id="pra"> 
+                    Nothing makes you feel better than when you get
+                    into a hotel bed, and the sheets feel so good.
+                    shouldn't you wake up like that every day? Spend 
+                      money on your mattress
+                       and bedding because these things make a difference on your
+                      sleep and, ultimately, your happiness. </p> 
+                      <div id="xyz">
+                       <div class="contact-method">
+                  <img src="https://th.bing.com/th?id=OIP.mMzZ6OsYd7BWk4kSXGA70AHaHx&w=244&h=256&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Instagram Icon">
+                  <a href="https://www.instagram.com/jvwarena/" target="_blank">Instagram</a>
+                </div>
+                 <div class="contact-method">
+                  <img src="data:image/jpeg;base64,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" alt="Twitter Icon">
+                  <a href="https://twitter.com/hoteljvwarena" target="_blank">Twitter</a>
+                </div>
+
+                
+                
+                <div class="contact-method"> 
+                  <img src="data:image/jpeg;base64,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" alt="Facebook">
+                  <a href="https://www.facebook.com/profile.php?id=61555298143281">Facebook</a>
+                </div>
+
+                <div class="contact-method">
+                  <img src="https://th.bing.com/th?id=OIP.zDsa2MoFeghUwytLWnDKwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Phone Icon">
+                  <a> 9031041800</a>
+                   <!-- <p>hoteljvwarena@gmail.com</p>
+                  <p>NH28A, Chhatauni-Bettiah Road, Matthiya Zirat, Motihari, Bihar, 845401 -->
+
+                  <!-- Near J.J. Kanak Hospital</p> -->
+                 </div>
+            </div>
+          </div>
+        </div>
+        </footer>
+   </body>
+
+</html>
